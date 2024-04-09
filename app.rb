@@ -31,25 +31,25 @@ get("/") do
 end
 
 get("/rock") do
-  player_choice = "Rock"
-  computer_choice = computer_choice()
-  outcome = get_outcome(player_choice, computer_choice)
+  @player_choice = "Rock"
+  @computer_choice = computer_choice()
+  @outcome = get_outcome(@player_choice, @computer_choice)
 
   erb(:rock)
 end
 
 get("/paper") do
-  player_choice = "Paper"
-  computer_choice = computer_choice()
-  outcome = get_outcome(player_choice, computer_choice)
+  @player_choice = "Paper"
+  @computer_choice = computer_choice()
+  @outcome = get_outcome(@player_choice, @computer_choice)
 
   erb(:paper)
 end
 
 get("/scissors") do
-  player_choice = "Scissors"
-  computer_choice = computer_choice()
-  outcome = get_outcome(player_choice, computer_choice)
+  @player_choice = "Scissors"
+  @computer_choice = computer_choice()
+  @outcome = get_outcome(@player_choice, @computer_choice)
 
   erb(:scissors)
 end
